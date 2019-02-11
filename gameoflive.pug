@@ -1,0 +1,29 @@
+doctype html
+
+html
+    head
+        title Game of Live
+        script(src='game_of_live_bundle.js', type='text/javascript')
+    body
+        input#myInput(type='file', style='display:none')
+
+        h1 Game of Live
+        h3 by Sergey Mitchenko
+
+        #canvas_holder
+
+        h4 Instructions:
+        p In the Menu on the right there are 3 Folders:
+        h5 Visual Controller:
+        p Change grid size (resolution X and resolution Y) or change the color of the live cells
+        h5 Functional Controller:
+        p Speed: Adjust the frame rate of the game
+        p Presets: There are some interesting stored presets to experiment with
+        p Calculation Algorithm: Choose the algorithm which is used to calculate the next generation of the Game of Live
+        p Draw: Check to draw alive cells in the grid via mouse drag
+        p Start (starts the game), Stop (stops the game), Next Generation (only calculates one generation further), Reset Grid (resets the Grid), Save (saves current grid into a cell.json file), Load (loads a chosen json file)
+        h5 Information:
+        p Shows general Information about the current game (Generation Number, Number of Alive Cells, Number of Births and Number of Deaths occurred in this generation)
+        p Also shows the time the algorithm needed to calculate this generation
+
+
